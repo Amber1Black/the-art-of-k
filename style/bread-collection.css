@@ -1,0 +1,1995 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+/*Headings*/
+
+.headingsection{
+  height: 88%;
+  width: 100%;
+  display: flex;
+  align-items: center; 
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 100;
+}
+
+.logo{
+  width: 20%;
+  min-width: 65px;
+  max-width: 70px;
+  margin-left: 40px;
+  margin-top: 14px;
+}
+  
+.menu-icon{
+  display: none;
+}
+
+nav{
+  flex: 1;
+  text-align: right;
+  padding-right: 20px;
+  background-color: white;
+}
+
+nav ul{
+  background-color: white;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 45px;
+  background-color: white; 
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  font-size: 17px;
+  background-color: white;
+  position: relative;
+}
+
+nav ul li a:hover{
+  color: rgb(80, 80, 80);
+}
+  
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(107, 107, 107);
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+/*Reveal*/
+
+.reveal{
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.reveal2{
+  position: relative;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal2.active{
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.reveal3{
+  position: relative;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal3.active{
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+/*Content*/
+
+.content{
+  background-color: #ffffff;
+}
+
+/*Root*/
+
+:root{
+  --width-image: 65vw;
+  --height: calc(65vw * 0.8);
+}
+
+/*Top Section*/
+
+.topsection{
+  background: linear-gradient(
+    to right,
+    rgb(252, 242, 238) 0%,
+    rgb(255, 250, 246) 40%,
+    rgb(255, 255, 255) 40%,
+    rgb(255, 255, 255) 100%
+  );
+  display: flex;
+  overflow: hidden;
+  height: var(--height);
+}
+
+.topsectionimage img{
+  width: var(--width-image);
+  height: var(--height);
+  object-fit: cover;
+  object-position: 50% 60%;
+  margin-left: 10%;
+}
+
+.topsectiondescription{
+  width: 42vw;
+  display: grid;
+  align-items: center;
+  margin: auto -20% auto 8%;
+  background-color: #ffffff;
+  padding: 5% 6%;
+  z-index: 5;
+}
+
+.topsectiondescription h1{
+  font-family: 'Lora', sans-serif;
+  font-size: 4.5vw;
+  font-weight: 600;
+  letter-spacing: 10px;
+  line-height: 1.3em;
+}
+
+.topsectiondescription p{
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  margin: 20px 0 0 0;
+  line-height: 1.6em;
+}
+
+/*Common Parameter*/
+
+h3{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: 3px;
+  word-spacing: 8px;
+}
+
+p,
+.bread-with-recipe-description a{
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+/*Homemade Bread*/
+
+.homemade-bread-backgroundcolor{
+  background-color: #142c35;
+}
+
+.homemade-bread{
+  padding-bottom: 150px;
+}
+
+.homemade-bread-description{
+  padding-top: 150px;
+  color: #fffef3;
+  text-align: center;
+}
+
+.homemade-bread-description p{
+  margin: 20px auto 30px auto;
+  width: 980px;
+}
+
+.homemade-bread-scroll-container{
+  margin: 50px 4% 30px 4%;
+  gap: 30px;
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.homemade-bread-scroll-container::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.homemade-bread-container{
+  white-space: wrap;
+}
+
+.homemade-bread-container img{
+  width: 28vw;
+  aspect-ratio: 1/1.3;
+  object-fit: cover;
+}
+
+
+/*Crispy Top*/
+
+.crispytop-backgroundcolor{
+  background-color: #142c35;
+}
+
+.crispytop{
+  display: flex;
+  padding: 100px 10%;
+}
+
+.crispytop-mobile{
+  display: none;
+}
+
+.crispytop-description{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: #ffffff;
+}
+
+.crispytop-description h3{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.crispytop-description p{
+  width: 430px;
+  line-height: 2em;
+  text-align: center;
+}
+
+.crispytop-slideshow{
+  width: 46vw;
+}
+
+.crispytop-slideshow-pic{
+  text-align: center;
+}
+
+.crispytop-slideshow-pic img{
+  width: 40vw;
+  aspect-ratio: 1/1.05;
+  object-fit: cover;
+}
+
+.crispytop-arrow{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.crispytop-prev, .crispytop-next{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  background-color: rgb(45, 112, 139);
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 2px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  z-index: 10;
+}
+
+.crispytop-prev{
+  margin: 0 10px 0 0;
+}
+
+.crispytop-next{
+  right: 3%;
+}
+
+.crispytop-prev:hover, .crispytop-next:hover{
+  background-color: rgba(56, 97, 135, 0.8);
+}
+
+.crispytop-bottomdot{
+  text-align: center;
+  margin-left: 20px;
+}
+
+.crispytop-dot{
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 20px 3px 20px 3px;
+  background-color: #ffffff;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.crispytop-active, .crispytop-dot:hover{
+  background-color: rgb(45, 112, 139);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/*Chocolate Bread*/
+
+.chocolate-bread{
+  padding-bottom: 100px;
+}
+
+.chocolate-bread-description{
+  padding: 170px 30% 0 7%;
+  color: #000000;
+}
+
+.chocolate-bread-description p{
+  margin-top: 20px;
+}
+
+.chocolate-bread-slider-section-2,
+.chocolate-bread-slider-section-3{
+  display: none;
+}
+
+.chocolate-bread-slider-1{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Hide the images by default */
+.chocolate-bread-sliderpic-1 {
+  display: none;
+}
+
+.chocolate-bread-picturesdisplay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 40px auto;
+}
+
+.chocolate-bread-picturesdisplay img{
+  width: 27vw;
+  aspect-ratio: 1/1.2;
+  object-fit: cover;
+}
+
+.chocolate-bread-image-5{
+  object-position: 50% 80%;
+}
+
+.chocolate-bread-arrow{
+  display: flex;
+  margin-top: -60px;
+}
+
+.chocolate-bread-prev,
+.chocolate-bread-next{
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  border-radius: ;
+  border-style: double;
+  border-color: #000000;
+  border-width: 5px;
+  font-weight: bold;
+  color: #000000;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: monospace;
+  padding: 5px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.chocolate-bread-prev{
+  margin: auto 3px auto 87%;
+}
+
+.chocolate-bread-prev:hover,
+.chocolate-bread-next:hover{
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/*Bread with Recipe*/
+
+.bread-with-recipe-backgroundcolor{
+  background-color: #142c35;
+  padding: 50px 0;
+}
+
+.bread-with-recipe-slideshow{
+  position: relative;
+}
+
+.bread-with-recipe-grid-content{
+  display: flex;
+  margin: 50px 10%;
+}
+
+.bread-with-recipe-image img{
+  width: 40vw;
+  aspect-ratio: 1/1.05;
+  object-fit: cover;
+}
+
+.bread-with-recipe-description{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: #fffbf1;
+}
+
+.bread-with-recipe-description h3{
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
+
+.bread-with-recipe-description p{
+  width: 430px;
+  line-height: 2em;
+  text-align: center;
+  margin: auto;
+}
+
+.bread-with-recipe-description a{
+  text-decoration: none;
+  color: #000000;
+  background-color: #fffbf1;
+  padding: 15px 30px;
+  width: 400px;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+.bread-with-recipe-prev, .bread-with-recipe-next{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  background-color: rgb(45, 112, 139);
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 2px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 100%;
+  z-index: 10;
+}
+
+.bread-with-recipe-arrow{
+  display: flex;
+  margin: -130px 0 70px 0;
+}
+
+.bread-with-recipe-prev{
+  margin: 0 10px 0 53%;
+}
+
+.bread-with-recipe-next{
+  margin: 0 20px 0 0;
+}
+
+.bread-with-recipe-prev:hover, .bread-with-recipe-next:hover {
+  background-color: rgba(56, 97, 135, 0.8);
+}
+
+.bread-with-recipe-bottomdot{
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.bread-with-recipe-dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.bread-with-recipe-active, .bread-with-recipe-dot:hover {
+  background-color: rgb(45, 112, 139);
+}
+
+/*Explore other gallery*/
+
+.othergallerytoexplore{
+  margin: 100px 0 0 0;
+}
+
+.othergallerytoexplore h3{
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-left: 6%;
+  word-spacing: normal;
+}
+
+.othergallery-scroll-container{
+  margin: 20px 6% 100px 6%;
+  gap: 40px;
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.othergallery-scroll-container::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.container{
+  white-space: wrap;
+}
+
+.container img{
+  width: 23vw;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.othergallerytoexploreimage2{
+  object-position: 50% 65%;
+}
+
+.othergallery-sliderdescription h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 20px 15px 5px 14px;
+}
+
+.othergallery-sliderdescription a{
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+.othergallery-sliderdescription p{
+  font-size: 17px;
+  line-height: 1.4em;
+  margin: 5px 15px;
+}
+
+/*copyright*/
+
+.copyright{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 11px;
+  color: grey;
+  bottom: 2%;
+}
+
+
+@media only screen and (max-width:1700px){
+
+  /*Bread with Recipe*/
+
+  .bread-with-recipe-grid-content{
+    margin: 50px 8%;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallerytoexplore h3{
+    font-size: 26px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 16px;
+  }
+  
+}
+
+@media only screen and (max-width:1500px){
+
+  /*Common Parameter*/
+
+  h3{
+    font-size: 37px;
+  }
+  
+  p,
+  .bread-with-recipe-description a{
+    font-size: 19px;
+  }
+
+  /*Top Section*/
+
+  .topsectiondescription h1{
+    letter-spacing: 7px;
+  }
+
+  /*Crispy Top*/
+
+  .crispytop{
+    padding: 0px 7% 100px 7%;
+  }
+
+  .crispytop-description p{
+    width: 420px;
+    line-height: 2em;
+  }
+
+  /*Chocolate Bread*/
+
+  .chocolate-bread-description{
+    padding: 120px 30% 0 5%;
+  }
+
+  .chocolate-bread-picturesdisplay{
+    gap: 30px;
+    margin: 40px auto;
+  }
+
+  .chocolate-bread-picturesdisplay img{
+    width: 29vw;
+    aspect-ratio: 1/1.2;
+  }
+
+  .chocolate-bread-arrow{
+    margin-top: -50px;
+  }
+
+  .chocolate-bread-prev{
+    margin: auto 3px auto 88%;
+  }
+
+  /*Bread with Recipe*/
+
+  .bread-with-recipe-grid-content{
+    margin: 50px 7%;
+  }
+
+  .bread-with-recipe-description p{
+    width: 410px;
+    line-height: 2em;
+  }
+
+  .bread-with-recipe-prev{
+    margin: 0 10px 0 50%;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallery-scroll-container{
+    gap: 30px;
+  }
+
+  .container img{
+    width: 26vw;
+  }
+
+  .othergallerytoexplore h3{
+    font-size: 21px;
+  }
+
+  .othergallery-sliderdescription h2,
+  .othergallery-sliderdescription a{
+    font-size: 21px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 15px;
+  }
+ 
+}
+
+
+@media only screen and (max-width:1300px){
+
+  /*Root*/
+
+  :root{
+    --width-image: 70vw;
+  }
+
+  /*Top Section*/
+
+  .topsectionimage img,
+  .topsection{
+    height: 750px;   
+  }
+
+  .topsectiondescription h1{
+    line-height: 1.2em;
+  }
+
+  /*Common Parameter*/
+
+  h3{
+    font-size: 35px;
+  }
+
+  p,
+  .bread-with-recipe-description a{
+    font-size: 18px;
+  }
+
+  /*Homemade Bread*/
+
+  .homemade-bread-description{
+    padding-top: 100px;
+  }
+
+  .homemade-bread-description p{
+    width: 900px;
+  }
+
+  .homemade-bread-scroll-container{
+    margin: 35px 4% 30px 4%;
+  }
+
+  .homemade-bread-container img{
+    width: 31vw;
+    aspect-ratio: 1/1.2;
+  }
+
+  /*Crispy Top*/
+
+  .crispytop-description p{
+    width: 400px;
+  }
+
+  .crispytop-slideshow-pic img{
+    width: 40vw;
+    aspect-ratio: 1/1.2;
+    min-height: 550px;
+  }
+
+  .crispytop-arrow{
+    margin-top: 40px;
+  }
+
+  .crispytop-prev, .crispytop-next{
+    width: 40px;
+    height: 40px;
+    padding: 7px;
+    border-width: 2px;
+    font-size: 15px;
+  }
+
+  .crispytop-dot{
+    height: 10px;
+    width: 10px;
+    margin: 15px 3px 15px 3px;
+  }
+
+
+  /*Chocolate Bread*/
+
+  .chocolate-bread-description{
+    padding: 100px 20% 0 4%;
+  }
+
+  .chocolate-bread-prev,
+  .chocolate-bread-next{
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    padding: 7px 0;
+    border-width: 4px;
+  }
+
+  .chocolate-bread-picturesdisplay{
+    gap: 20px;
+    margin: 40px auto;
+  }
+
+  .chocolate-bread-picturesdisplay img{
+    width: 31vw;
+    aspect-ratio: 1/1.2;
+  }
+
+  .chocolate-bread-prev{
+    margin: auto 3px auto 89%;
+  }
+
+  /*Bread with Recipe*/
+
+  .bread-with-recipe-description p{
+    width: 390px;
+  }
+
+  .bread-with-recipe-grid-content{
+    margin: 50px 5%;
+  }
+
+  .bread-with-recipe-image img{
+    width: 40vw;
+    height: 550px;
+  }
+
+  .bread-with-recipe-arrow{
+    margin: -110px 0 50px 0;
+  }
+
+  .bread-with-recipe-prev{
+    margin: 0 5px 0 48%;
+  }
+
+  .bread-with-recipe-prev, .bread-with-recipe-next{
+    width: 45px;
+    height: 45px;
+    padding: 9px;
+    font-size: 16px;
+  }
+
+  .bread-with-recipe-dot{
+    width: 13px;
+    height: 13px;
+  }
+  
+
+  /*Explore other gallery*/
+
+  .othergallery-scroll-container{
+    gap: 25px;
+    margin: 20px 4% 100px 4%;
+  }
+
+  .othergallerytoexplore h3{
+    margin-left: 4%;
+  }
+
+  .othergallery-sliderdescription h2,
+  .othergallery-sliderdescription a{
+    font-size: 20px;
+  }
+
+  .othergallery-sliderdescription h2{
+    margin: 12px 15px 0px 14px;
+  }
+  
+  .othergallery-sliderdescription p{
+    margin: 5px 10px 0px 15px;
+  }
+ 
+}
+
+
+@media only screen and (max-width:1050px){
+
+  /*Top Section*/
+
+  .topsectionimage img,
+  .topsection{
+    height: 700px;   
+  }
+
+  .topsectiondescription{
+    width: 50vw;
+    margin: auto -25% auto 5%;
+    padding: 6% 6%;
+  }
+
+  .topsectiondescription p{
+    font-size: 17px;
+    line-height: 1.5em;
+  }
+
+  /*Common Parameter*/
+
+  h3{
+    font-size: 32px;
+  }
+
+  p,
+  .bread-with-recipe-description a{
+    font-size: 17px;
+  }
+
+  /*Homemade Bread*/
+
+  .homemade-bread-description p{
+    width: 600px;
+  }
+
+  .homemade-bread-scroll-container{
+    margin: 35px 4% 30px 4%;
+  }
+
+  .homemade-bread-container img{
+    width: 35vw;
+    aspect-ratio: 1/1.25;
+  }
+
+  /*Crispy Top*/
+
+  .crispytop{
+    padding: 20px 4% 80px 4%;
+  }
+
+  .crispytop-description p{
+    width: 380px;
+    line-height: 1.8em;
+  }
+
+  .crispytop-slideshow{
+    width: 46vw;
+  }
+
+  .crispytop-slideshow-pic img{
+    width: 40vw;
+    min-height: 500px;
+  }
+
+  .crispytop-arrow{
+    margin-top: 30px;
+  }
+
+  /*Chocolate Bread*/
+
+  .chocolate-bread{
+    padding-bottom: 70px;
+  }
+
+  .chocolate-bread-description{
+    padding: 80px 28% 0 6%;
+  }
+
+  .chocolate-bread-description p{
+    margin-top: 12px;
+  }
+
+  .chocolate-bread-slider-section-1{
+    display: none;
+  }
+
+  .chocolate-bread-slider-section-2{
+    display: grid;
+  }
+
+  .chocolate-bread-slider-2{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Hide the images by default */
+  .chocolate-bread-sliderpic-2 {
+    display: none;
+  }
+
+  .chocolate-bread-picturesdisplay{
+    gap: 30px;
+    margin: 30px auto;
+  }
+
+  .chocolate-bread-picturesdisplay img{
+    width: 43vw;
+    aspect-ratio: 1/1.2;
+  }
+
+  .chocolate-bread-arrow{
+    margin-top: -40px;
+  }
+
+  .chocolate-bread-prev{
+    margin: auto 3px auto 84%;
+  }
+
+  /*Bread with Recipe*/
+
+  .bread-with-recipe-grid-content{
+    margin: 40px 4%;
+  }
+
+  .bread-with-recipe-image img{
+    width: 40vw;
+    height: 500px;
+  }
+
+  .bread-with-recipe-description h3{
+    letter-spacing: 2px;
+    word-spacing: normal;
+  }
+
+  .bread-with-recipe-description p{
+    width: 370px;
+    line-height: 2em;
+  }
+
+  .bread-with-recipe-arrow{
+    margin: -90px 0 20px 0;
+  }
+
+  .bread-with-recipe-prev{
+    margin: 0 5px 0 47%;
+  }
+
+  .bread-with-recipe-prev, .bread-with-recipe-next{
+    width: 40px;
+    height: 40px;
+    padding: 7px;
+    font-size: 15px;
+  }
+
+  .bread-with-recipe-dot{
+    height: 12px;
+    width: 12px;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallery-scroll-container{
+    gap: 25px;
+    margin: 20px 5% 100px 5%;
+  }
+
+  .othergallerytoexplore h3{
+    margin-left: 5%;
+    font-size: 20px;
+  }
+
+  .container img{
+    width: 31vw;
+  }
+
+  .othergallery-sliderdescription h2{
+    margin: 12px 10px 0px 9px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 14px;
+    margin: 4px 10px 0px 10px;
+  }
+}
+
+
+@media only screen and (max-width:900px){
+
+  /*Headings*/
+
+  .logo{
+    margin-left: 20px;
+  }
+
+  nav{
+    padding-right: 1%;
+  }
+
+  nav ul li{
+    margin-right: 28px;
+  }
+
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+
+
+@media only screen and (max-width:850px){
+
+  /*Top Section*/
+
+  .topsectionimage img,
+  .topsection{
+    height: 700px;   
+  }
+
+  .topsectiondescription{
+    width: 65vw;
+    margin: auto -30% auto 5%;
+    padding: 7% 6%;
+  }
+
+  .topsectiondescription h1{
+    font-size: 45px;
+    line-height: 1.3em;
+  }
+
+  .topsectiondescription p{
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+
+  /*Common Parameter*/
+
+  h3{
+    font-size: 30px;
+  }
+
+  p,
+  .bread-with-recipe-description a{
+    font-size: 16px;
+  }
+
+  /*Homemade Bread*/
+
+  .homemade-bread{
+    padding-bottom: 100px;
+  }
+
+  .homemade-bread-description p{
+    width: 550px;
+  }
+
+  .homemade-bread-scroll-container{
+    margin: 35px 4% 30px 4%;
+    gap: 20px;
+  }
+
+  .homemade-bread-container img{
+    width: 40vw;
+    aspect-ratio: 1/1.25;
+  }
+
+  /*Crispy Top*/
+
+  .crispytop{
+    padding: 0 2% 100px 2%;
+  }
+
+  .crispytop-description p{
+    width: 300px;
+    line-height: 1.6em;
+  }
+
+  .crispytop-slideshow{
+    width: 46vw;
+    min-height: 400px;
+  }
+
+  .crispytop-slideshow-pic img{
+    width: 44vw;
+    min-height: 450px;
+  }
+
+  .crispytop-prev, .crispytop-next{
+    width: 40px;
+    height: 40px;
+    padding: 7px;
+    border-width: 2px;
+    font-size: 15px;
+  }
+
+  /*Chocolate Bread*/
+
+  .chocolate-bread-description{
+    padding: 80px 23% 0 6%;
+  }
+
+  .chocolate-bread-picturesdisplay{
+    gap: 20px;
+  }
+
+  .chocolate-bread-picturesdisplay img{
+    width: 45vw;
+    aspect-ratio: 1/1.25;
+  }
+
+  .chocolate-bread-prev{
+    margin: auto 3px auto 83%;
+  }
+
+  /*Bread with Recipe*/
+
+  .bread-with-recipe-grid-content{
+    margin: 50px 2% 50px 4%;
+  }
+
+  .bread-with-recipe-image img{
+    width: 40vw;
+    height: 440px;
+  }
+
+  .bread-with-recipe-description h3{
+    font-size: 27px;
+    letter-spacing: 2px;
+  }
+
+  .bread-with-recipe-description p{
+    width: 310px;
+    line-height: 1.7em;
+  }
+
+  .bread-with-recipe-description a{
+    padding: 10px 30px;
+  }
+
+  .bread-with-recipe-arrow{
+    margin-top: -95px;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallerytoexplore h3{
+    font-size: 19px;
+  }
+
+  .othergallery-sliderdescription h2,
+  .othergallery-sliderdescription a{
+    font-size: 19px;
+  }
+
+  .container img{
+    width: 38vw;
+  }
+  
+}
+
+
+
+@media only screen and (max-width:700px){
+
+	/*Headings*/
+
+  nav ul li{
+    margin-right: 15px;
+  } 
+
+  nav ul li a{
+    font-size: 15px;
+  }
+
+  /*Top Section*/
+
+  .topsection{
+    background: linear-gradient(
+      to right,
+      rgb(158, 210, 201) 0%,
+      rgb(158, 209, 201) 12%,
+      rgb(255, 255, 255) 12%,
+      rgb(255, 255, 255) 100%
+    );
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .topsectionimage img,
+  .topsection{
+    height: 800px;   
+  }
+
+  .topsectiondescription{
+    background-color: unset;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px black;
+    width: 72vw;
+    padding: unset;
+    position: absolute;
+    top: 65%;
+    left: 12%;
+  }
+
+  .topsectiondescription h1{
+    font-family: 'Lora', sans-serif;
+    font-size: 50px;
+  }
+
+  .topsectiondescription p{
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0px;
+  }
+
+  .topsectionimage{
+    position: absolute;
+    left: 11%;
+    top: 0%;
+  }
+
+  .topsectionimage img{
+    width: 89vw;
+    margin-left: 0%;
+    filter: brightness(0.9);
+  }
+
+  /*Common Parameter*/
+
+  h3{
+    font-size: 35px;
+    letter-spacing: 2px;
+  }
+
+  p,
+  .bread-with-recipe-description a{
+    letter-spacing: 0px;
+  }
+
+  /*Homemade Bread*/
+
+  .homemade-bread-description p{
+    width: 500px;
+  }
+
+  .homemade-bread-scroll-container{
+    margin: 35px 4% 30px 4%;
+    gap: 25px;
+  }
+
+  .homemade-bread-container img{
+    width: 50vw;
+    aspect-ratio: 1/1.25;
+  }
+
+  /*Crispy Top*/
+
+  .crispytop{
+    display: grid;
+  }
+
+  .crispytop-description p{
+    width: 450px;
+  }
+
+  .crispytop-slideshow{
+    width: unset;
+    min-height: unset;
+    margin-top: 30px;
+  }
+
+  .crispytop-slideshow-pic img{
+    width: 75vw;
+    aspect-ratio: 1/1.1;
+    min-height: unset;
+  }
+
+  /*Chocolate Bread*/
+
+  .chocolate-bread{
+    padding-bottom: 50px;
+  }
+
+  .chocolate-bread-description{
+    padding: 80px 21% 0 4%;
+  }
+
+  .chocolate-bread-picturesdisplay{
+    gap: 15px;
+    margin: 30px auto;
+  }
+
+  .chocolate-bread-picturesdisplay img{
+    width: 45vw;
+    height: 400px;
+  }
+
+  .chocolate-bread-prev,
+  .chocolate-bread-next{
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    padding: 6px 0;
+    border-width: 3px;
+  }
+
+  .chocolate-bread-prev{
+    margin: auto 3px auto 82%;
+  }
+
+  /*Bread with Recipe*/
+
+  .bread-with-recipe-grid-content{
+    display: grid;
+    margin: 20px 7% 30px 7%;
+    justify-content: center;
+  }
+
+  .bread-with-recipe-image img{
+    width: 75vw;
+    height: 450px;
+  }
+
+  .bread-with-recipe-description h3{
+    margin: 30px auto 20px auto;
+  }
+
+  .bread-with-recipe-description p{
+    width: 420px;
+  }
+
+  .bread-with-recipe-arrow{
+    margin-top: 0px;
+    justify-content: center;
+  }
+
+  .bread-with-recipe-prev{
+    margin: unset;
+  }
+
+  .bread-with-recipe-prev{
+    margin-right: 5px;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallerytoexplore{
+    padding-top: 30px;
+  }
+
+  .othergallery-scroll-container{
+    gap: 20px;
+    margin: 10px 5% 100px 5%;
+  }
+
+  .othergallerytoexplore{
+    margin: 30px 0 0 0;
+  }
+
+  .container img{
+    width: 40vw;
+  }
+  
+}
+
+
+@media only screen and (max-width:600px){
+
+  /*Headings*/
+
+  .logo{
+    width: 12%;
+    max-width: 50px;
+    margin-left: 20%;
+    margin-top: 10px;
+  }
+
+  nav{
+    text-align: left;
+  }
+  
+  nav ul{
+    width: 100%;
+    background: white;
+    opacity: 0.98;
+    position: absolute;
+    align-self: center;
+    top: 100%;
+    height: 100vh;
+    right: 0;
+    z-index: 999;
+  }
+
+  nav ul li{
+    background-color: transparent;
+    display: block;
+    margin: 2.5em;
+  }
+
+  nav ul li a{
+    background-color: transparent;
+    color: rgb(20, 20, 20);
+    font-size: 15px;
+    margin: 0px;
+    letter-spacing: 3px;
+    font-weight: 500;
+  }
+
+  nav ul li a:hover{
+    color:black;
+  }
+
+  nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    transition: width 0.5s;
+  }
+
+  nav ul li a:hover::after{
+    width: 0;
+  }
+
+  .menu-icon{
+    display: block;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 55px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  #menulist{
+    overflow: hidden;
+    transition: 0.5s;
+    padding-right: 10px;
+  }
+
+  /*Root*/
+
+  :root{
+    --width-image: 80vw;
+  }
+
+  /*Top Section*/
+
+  .topsectionimage img,
+  .topsection{
+    height: 700px;   
+  }
+
+  .topsectiondescription{
+    width: 68vw;
+    top: 55%;
+  }
+
+  .topsectiondescription h1{
+    font-size: 47px;
+  }
+
+  .topsectiondescription p{
+    margin: 12px 0 0 0;
+  }
+
+  /*Common Parameter*/
+
+  h3{
+    font-size: 32px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+  }
+
+  p,
+  .bread-with-recipe-description a{
+    font-size: 16px;
+    font-weight: 450;
+  }
+
+  /*Homemade Bread*/
+
+  .homemade-bread-description p{
+    margin: 15px auto 30px auto;
+    width: 370px;
+  }
+
+  .homemade-bread-scroll-container{
+    margin: 35px 4% 30px 4%;
+    gap: 25px;
+  }
+
+  .homemade-bread-container img{
+    width: 60vw;
+    aspect-ratio: 1/1.25;
+  }
+
+  /*Crispy Top*/
+
+  .crispytop{
+    padding: 50px auto 0 auto;
+  }
+
+  .crispytop-description p{
+    width: 390px;
+    margin: 0 auto;
+  }
+
+  .crispytop-arrow{
+    margin-top: 18px;
+  }
+
+  .crispytop-prev, .crispytop-next{
+    width: 35px;
+    height: 35px;
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  .crispytop-prev{
+    margin: 0 5px 0 0;
+  }
+
+  .crispytop-dot{
+    margin: 12px 2px;
+  }
+
+  .crispytop-slideshow-pic img{
+    width: 80vw;
+    aspect-ratio: 1/1.1;
+    min-height: unset;
+  }
+
+  /*Chocolate Bread*/
+
+  .chocolate-bread-description{
+    padding: 80px 22% 0 7%;
+  }
+
+  .chocolate-bread-description p{
+    margin-top: 10px;
+  }
+
+  .chocolate-bread-slider-section-2{
+    display: none;
+  }
+
+  .chocolate-bread-slider-section-3{
+    display: grid;
+  }
+
+  .chocolate-bread-slider-3{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Hide the images by default */
+  .chocolate-bread-sliderpic-3 {
+    display: none;
+  }
+
+  .chocolate-bread-picturesdisplay{
+    gap: 0px;
+    margin: 30px auto;
+  }
+
+  .chocolate-bread-picturesdisplay img{
+    width: 80vw;
+    aspect-ratio: 1/1.1;
+    height: unset;
+  }
+
+  .chocolate-bread-prev,
+  .chocolate-bread-next{
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    padding: 5px 0;
+  }
+
+  .chocolate-bread-prev:hover,
+  .chocolate-bread-next:hover{
+    background-color: unset;
+    color: unset;
+    border-color: unset;
+  }
+
+  .chocolate-bread-arrow{
+    display: grid;
+    margin-top: -80px;
+  }
+
+  .chocolate-bread-prev,
+  .chocolate-bread-next{
+    margin: auto 0 3px 85%;
+  }
+
+
+  /*Bread with Recipe*/
+
+  .bread-with-recipe-grid-content{
+    margin: 20px auto;
+  }
+
+  .bread-with-recipe-image img{
+    width: 80vw;
+    height: 400px;
+  }
+
+  .bread-with-recipe-description h3{
+    margin: 30px auto 10px auto;
+  }
+
+  .bread-with-recipe-description p{
+    width: 400px;
+    line-height: 1.6em;
+  }
+
+  .bread-with-recipe-arrow{
+    margin-top: 30px;
+  }
+
+  .bread-with-recipe-next{
+    margin-right: 7px;
+  }
+
+  .bread-with-recipe-dot{
+    margin: 0 4px;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallerytoexplore h3{
+    font-size: 19px;
+    font-weight: 500;
+    word-spacing: normal;
+  }
+
+  .container img{
+    width: 50vw;
+  }
+
+  .othergallery-sliderdescription h2,
+  .othergallery-sliderdescription a{
+    font-size: 19px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 14px;
+    letter-spacing: 0px;
+  }
+  
+}
+
+
+@media only screen and (max-width:500px){
+
+  /*Top Section*/
+
+  .topsectiondescription p{
+    font-size: 16px;
+  }
+
+  /*Common Parameter*/
+
+  p,
+  .bread-with-recipe-description a{
+    font-size: 15px;
+    line-height: 1.4em;
+  }
+
+  /*Homemade Bread*/
+
+  .homemade-bread-description p{
+    margin: 12px auto 30px auto;
+    width: 350px;
+  }
+
+  .homemade-bread-scroll-container{
+    margin: 35px 4% 30px 4%;
+    gap: 20px;
+  }
+
+  .homemade-bread-container img{
+    width: 70vw;
+    aspect-ratio: 1/1.25;
+  }
+
+  /*Crispy Top*/
+
+  .crispytop{
+    padding: 0px 6% 40px 6%;
+  }
+
+  .crispytop-description p{
+    width: 360px;
+  }
+
+  .crispytop-slideshow-pic img{
+    width: 90vw;
+    min-height: unset;
+  }
+
+  /*Chocolate Bread*/
+
+  .chocolate-bread-description{
+    padding: 80px 20% 0 6%;
+  }
+
+  .chocolate-bread-picturesdisplay{
+    margin: 30px auto;
+  }
+
+  .chocolate-bread-picturesdisplay img{
+    width: 85vw;
+  }
+
+  .chocolate-bread-prev,
+  .chocolate-bread-next{
+    margin: auto 0 3px 87%;
+  }
+
+  /*Bread with Recipe*/
+
+   .bread-with-recipe-grid-content{
+    margin: 10px auto;
+  }
+
+  .bread-with-recipe-image img{
+    width: 90vw;
+    height: 360px;
+  }
+
+  .bread-with-recipe-description h3{
+    font-size: 27px;
+  }
+
+  .bread-with-recipe-description p{
+    width: 300px;
+  }
+
+  .bread-with-recipe-arrow{
+    margin-top: 30px;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallerytoexplore{
+    margin: 40px 0 0 0;
+  }
+
+  .othergallerytoexplore h3{
+    font-size: 18px;
+    letter-spacing: 0px;
+  }
+
+  .container img{
+    width: 63vw;
+  }
+
+  .othergallery-sliderdescription h2{
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 10px 10px 5px 10px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 13px;
+    margin: 0 10px;
+  }
+  
+} 
+
+
+@media only screen and (max-width:450px){
+
+  /*Top Section*/
+
+  .topsectionimage img,
+  .topsection{
+    height: 600px;   
+  }
+
+  .topsectiondescription{
+    width: 75vw;
+
+  }
+
+  .topsectiondescription h1{
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+
+  .topsectiondescription p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.3em;
+    margin: 10px 0 0 0;
+  }
+
+  /*Common Parameter*/
+
+  h3{
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+
+  /*Homemade Bread*/
+
+  .homemade-bread-scroll-container{
+    margin: 35px 4% 0 4%;
+    gap: 20px;
+  }
+
+  .homemade-bread-container img{
+    width: 80vw;
+    aspect-ratio: 1/1.25;
+  }
+
+  /*Crispy Top*/
+
+  .crispytop{
+    padding: 20px 6% 0px 6%;
+  }
+
+  .crispytop-description p{
+    width: 300px;
+    line-height: 1.6em;
+  }
+
+  .crispytop-slideshow{
+    margin: 20px 0 40px 0;
+  }
+
+  .crispytop-slideshow-pic img{
+    aspect-ratio: 1/1.1;
+    width: 90vw;
+  }
+
+  .crispytop-arrow{
+    margin-top: 15px;
+  }
+
+  /*Chocolate Bread*/
+
+  .chocolate-bread-picturesdisplay img{
+    width: 90vw;
+    height: 420px;
+  }
+
+  /*Bread with Recipe*/
+
+  .bread-with-recipe-image img{
+    width: 90vw;
+    height: 330px;
+  }
+
+  .bread-with-recipe-description h3{
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallerytoexplore h3{
+    font-size: 16px;
+  }
+
+  .othergallery-sliderdescription h2{
+    font-size: 17px;
+  }
+
+}
+
