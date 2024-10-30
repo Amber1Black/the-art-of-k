@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.the-art-of-k.com/</loc>
+    <lastmod>2024-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Baking Collection Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/baking-collection</loc>
+    <lastmod>2024-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Recipe Summary Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/recipe-summary</loc>
+    <lastmod>2024-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Journey Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/journey-summary</loc>
+    <lastmod>2024-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- About Me Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/about-me</loc>
+    <lastmod>2024-09-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/contact</loc>
+    <lastmod>2024-09-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Tart Collection Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/baking-collection/tart</loc>
+    <lastmod>2024-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Cake Collection Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/baking-collection/cake</loc>
+    <lastmod>2024-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Bread Collection Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/baking-collection/bread</loc>
+    <lastmod>2024-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Cookie Collection Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/baking-collection/cookie</loc>
+    <lastmod>2024-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Pastry Collection Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/baking-collection/pastry</loc>
+    <lastmod>2024-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Lemon Tart Recipe Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/recipe/lemon-tart</loc>
+    <lastmod>2024-09-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Hydrangea Tart Recipe Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/recipe/hydrangea-tart</loc>
+    <lastmod>2024-09-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Custard Bread Recipe Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/recipe/custard-bread</loc>
+    <lastmod>2024-09-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Chocolate Twist Bread Recipe Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/recipe/chocolate-twist-bread</loc>
+    <lastmod>2024-08-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Pumpkin Bread Recipe Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/recipe/pumpkin-bread</loc>
+    <lastmod>2024-09-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Matcha Mushroom Bread Recipe Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/recipe/matcha-mushroom-bread</loc>
+    <lastmod>2024-09-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Mushroom Bread Recipe Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/recipe/mushroom-bread</loc>
+    <lastmod>2024-09-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Matcha Loaf Recipe Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/recipe/matcha-loaf</loc>
+    <lastmod>2024-09-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Dress Cookie Recipe Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/recipe/dress-cookie</loc>
+    <lastmod>2024-09-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Poke Ball Cookie Recipe Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/recipe/poke-ball-cookie</loc>
+    <lastmod>2024-09-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Mushroom Ball Cookie Recipe Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/recipe/mushroom-cookie</loc>
+    <lastmod>2024-09-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Flower Butter Cookie Recipe Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/recipe/flower-butter-cookie</loc>
+    <lastmod>2024-09-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Butterfly Palmier Recipe Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/recipe/butter-flypalmier</loc>
+    <lastmod>2024-09-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Coffee Genoise Recipe Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/recipe/coffee-genoise</loc>
+    <lastmod>2024-09-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Mexico Bun Recipe Page -->
+  <url>
+    <loc>https://www.the-art-of-k.com/recipe/mexico-bun</loc>
+    <lastmod>2024-09-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Travel Page on Old Royal Naval College -->
+  <url>
+    <loc>https://www.the-art-of-k.com/journey/old-royal-naval-college</loc>
+    <lastmod>2024-09-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Travel Page on Tate Britain -->
+  <url>
+    <loc>https://www.the-art-of-k.com/journey/tate-britain</loc>
+    <lastmod>2024-10-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Travel Page on Design Museum -->
+  <url>
+    <loc>https://www.the-art-of-k.com/journey/design-museum</loc>
+    <lastmod>2024-10-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>
