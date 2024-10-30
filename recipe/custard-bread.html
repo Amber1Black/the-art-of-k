@@ -24,7 +24,7 @@
   <!-- End cookieyes banner -->
     
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BE8Z02SWY7"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8QKF57729H"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -37,7 +37,7 @@
   
     // Initialize Google Analytics
     gtag('js', new Date());
-    gtag('config', 'G-BE8Z02SWY7', {
+    gtag('config', 'G-8QKF57729H', {
       'anonymize_ip': true,                  // Anonymize IPs to further protect user privacy
       'allow_google_signals': false,         // Prevent the use of additional data for remarketing and advertising
       'allow_ad_personalization_signals': false // Prevent data from being used for ad personalization
@@ -149,17 +149,16 @@
           <button onclick="plusDotsSlides(1)">&#10095;</button>
       
           <!-- Navigation dots -->
-          <div id="my-slider-dots" class="dots-container">
+          <div id="slide-container-1-dots" class="dots-container">
             <span class="dot" onclick="currentDotsSlide(1, 'my-slider')"></span>
             <span class="dot" onclick="currentDotsSlide(2, 'my-slider')"></span>
             <span class="dot" onclick="currentDotsSlide(3, 'my-slider')"></span>
           </div>
         </div>
       </div>
-      
     </div>
     <div class="top-section-right">
-      <div id="my-slider" class="slider-container">
+      <div id="slider-container-1" class="slider-container">
         <div class="slide fade">
           <img src="../pictures/custard-bread.jpg" alt="Slide 1">
         </div>
@@ -175,6 +174,50 @@
         <h3>Let's Try</h3>
       </div>
     </div>
+  </div>
+
+  <div class="top-section-mobile">
+    <div class="top-section-mobile-title">
+      <img src = "../pictures/custard-bread-wordings.png">
+    </div>
+    <div class="top-section-mobile-image-slider">
+      <div id="slider-container-2" class="slider-container">
+        <div class="slide fade">
+          <img src="../pictures/custard-bread.jpg" alt="Slide 1">
+        </div>
+        <div class="slide fade">
+          <img src="../pictures/custard-bread-2.jpg" alt="Slide 2">
+        </div>
+        <div class="slide fade">
+          <img src="../pictures/custard-bread-3.jpg" alt="Slide 3">
+        </div>
+      </div>  
+    </div>
+    <div class="top-section-mobile-arrow">
+      <!-- Buttons to navigate between slides -->
+      <button onclick="plusDotsSlides(-1)">&#10094;</button>
+      <button onclick="plusDotsSlides(1)">&#10095;</button>
+  
+      <!-- Navigation dots -->
+      <div id="slide-container-2-dots" class="dots-container">
+        <span class="dot" onclick="currentDotsSlide(1, 'my-slider-mobile')"></span>
+        <span class="dot" onclick="currentDotsSlide(2, 'my-slider-mobile')"></span>
+        <span class="dot" onclick="currentDotsSlide(3, 'my-slider-mobile')"></span>
+      </div>
+    </div>
+    <div class="top-section-description">
+      <p>Indulge in the perfect balance of fluffy bread and a rich, creamy custard with this delightful Custard Bread recipe. This treat is a fusion of soft, golden bread filled with a luscious custard that is surprisingly easy to make yet irresistibly delicious.</p>
+      <div class="additional-info">
+        <div class="left-column">
+          <h4>Category : Bread</h4>
+          <h4>Yield : 12 pieces</h4>
+        </div>
+        <div class="right-column">
+          <h4>Total Time : 3 hours</h4>
+          <h4>Date Created : 02/09/2024</h4>
+        </div>
+      </div>
+    </div>  
   </div>
 
   <div class="lower-section">
@@ -389,7 +432,8 @@
     <script>
       // Initialize the slider when the page loads
       window.onload = function() {
-        WithDotsSlider('my-slider');
+        WithDotsSlider('slider-container-1');
+        WithDotsSlider('slider-container-2');
       };
     </script>
   
